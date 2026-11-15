@@ -191,7 +191,7 @@ def analyze_json():
 def performance_test(sizes, repeats=10):
     """크기별 MAC 연산 시간을 반복 측정한다."""
 
-    print(f"\n[성능 분석] 평균/{repeats}회")
+    print(f"\n[성능 분석] MAC 평균 연산 시간(ms) / {repeats}회")
     print(f"{'크기':<12}{'평균 시간(ms)':<18}{'연산 횟수':<12}")
     print("-" * 42)
 

@@ -61,6 +61,9 @@ MAC은 Multiply-Accumulate의 약자로,
 입력 패턴과 필터에서 같은 위치의 숫자를 곱하고,
 모든 결과를 합산하여 하나의 점수를 계산합니다.
 
+<img width="1672" height="941" alt="mac-operation" src="https://github.com/user-attachments/assets/68a8a085-1585-4db0-afb4-1757309764c3" />
+
+
 ### 4.1 입력 패턴
 
 십자가 패턴:
@@ -245,6 +248,8 @@ if abs(score_a - score_b) < EPSILON:
 ---
 
 ## 8. 프로그램 실행 흐름
+
+<img width="1672" height="941" alt="mini-npu-architecture" src="https://github.com/user-attachments/assets/aebb2998-679c-4bd1-88a9-3c238ae806f9" />
 
 ```mermaid
 flowchart TD
@@ -487,6 +492,9 @@ def mac_flat(pattern, filter_data):
 | 13×13 | 0.005409 | 0.003438 | 1.57x |
 | 25×25 | 0.018603 | 0.013883 | 1.34x |
 
+<img width="2586" height="1193" alt="mac-performance-comparison" src="https://github.com/user-attachments/assets/08b1312b-4fbb-48ce-959f-2a20ca33ba5a" />
+
+
 ### 14.5 결과 분석
 
 1. 모든 크기에서 1차원 방식의 실행 시간이 더 짧게 측정되었습니다.
@@ -671,6 +679,9 @@ NPU는 신경망에서 반복적으로 수행되는
 높은 처리량을 제공하도록 설계됩니다.
 
 ### 17.3 CPU와 NPU의 병목 비교
+
+<img width="1672" height="941" alt="cpu-vs-npu" src="https://github.com/user-attachments/assets/b5a2d68d-227e-4f4c-9eee-2ea23b66c562" />
+
 
 | 비교 항목 | CPU 기반 구현 | NPU 기반 설계 |
 |---|---|---|
